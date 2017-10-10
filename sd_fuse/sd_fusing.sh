@@ -41,7 +41,7 @@ fi
 ####################################
 # check files
 
-E4412_UBOOT=../u-boot-2017.09/u-boot.bin
+E4412_UBOOT=../u-boot.bin
 MKBL2=./mkbl2
 
 if [ ! -f ${E4412_UBOOT} ]; then
