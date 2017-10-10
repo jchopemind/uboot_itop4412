@@ -1,0 +1,143 @@
+/*
+ * Odroid-U3/X2 board device tree source
+ *
+ * Copyright (c) 2014 Samsung Electronics Co., Ltd.
+ *		http://www.samsung.com
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
+ */
+
+/dts-v1/;
+#include "exynos4412.dtsi"
+#include <dt-bindings/gpio/gpio.h>
+#include <dt-bindings/input/input.h>
+/ {
+	model = "June Cheal based on Exynos4412";
+	compatible = "samsung,zj4412", "samsung,exynos4412", "samsung,exynos4";
+
+	chosen {
+		stdout-path = "serial3:115200n8";
+	};
+
+	aliases {
+		serial3 = "/serial@13830000";
+		console = "/serial@13830000";
+		/* mmc0 = &mshc_0; */
+		/* mmc1 = &sdhci2; */
+	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		led2 {
+			label = "red:system";
+			gpios = <&gpl2 0 GPIO_ACTIVE_HIGH>;
+			default-state = "off";
+			linux,default-trigger = "heartbeat";
+		};
+
+		led3 {
+			label = "red:user";
+			gpios = <&gpk1 1 GPIO_ACTIVE_HIGH>;
+			default-state = "off";
+		};
+	};
+
+	gpio-keys {
+		compatible = "gpio-keys";
+
+		home {
+			label = "GPIO key Home";
+			linux,code = <KEY_HOME>;
+			gpios = <&gpx1 1 GPIO_ACTIVE_LOW>;
+		};
+
+		back {
+			label = "GPIO key back";
+			linux,code = <KEY_BACK>;
+			gpios = <&gpx1 2 GPIO_ACTIVE_LOW>;
+		};
+
+		sleep {
+			label = "GPIO key sleep";
+			linux,code = <KEY_POWER>;
+			gpios = <&gpx3 3 GPIO_ACTIVE_LOW>;
+		};
+
+		vol-up {
+			label = "GPIO key Vol+";
+			linux,code = <KEY_UP>;
+			gpios = <&gpx2 1 GPIO_ACTIVE_LOW>;
+		};
+
+		vol-down {
+			label = "GPIO key Vol-";
+			linux,code = <KEY_DOWN>;
+			gpios = <&gpx2 0 GPIO_ACTIVE_LOW>;
+		};
+
+	};
+
+	ehci@12580000 {
+		compatible = "samsung,exynos4412-ehci";
+		reg = <0x12580000 0x100>;
+		#address-cells = <1>;
+		#size-cells = <1>;
+		phy {
+			compatible = "samsung,exynos-usb-phy";
+			reg = <0x125B0000 0x100>;
+		};
+	};
+
+	serial3:serial@13830000 {
+		status = "okay";
+	};
+
+	sdhci@12530000 {
+		compatible = "samsung,exynos4412-sdhci";
+		samsung,bus-width = <4>;
+		samsung,timing = <1 2 3>; 
+		cd-gpios = <&gpk2 2 0>;
+		status = "okay";
+	};
+
+	emmc-reset {
+		compatible = "samsung,emmc-reset";
+		reset-gpio = <&gpk1 2 0>;
+	};
+
+/*
+	mshc {
+		samsung,bus-width = <8>;
+		samsung,timing = <2 1 0>;
+		samsung,removable = <0>;
+		fifoth_val = <0x203f0040>;
+		bus_hz = <800000000>;
+		div = <0x4>;
+		index = <4>;
+		status = "okay";
+	};
+*/
+};
+
+/*
+&sdhci2 {
+	samsung,bus-width = <4>;
+	samsung,timing = <1 2 3>; 
+	cd-gpios = <&gpk2 2 0>;
+	status = "okay";
+};
+*/
+/*
+&mshc_0 {
+	samsung,bus-width = <8>;
+	samsung,timing = <2 1 0>;
+	samsung,removable = <0>;
+	fifoth_val = <0x203f0040>;
+	bus_hz = <800000000>;
+	div = <0x7>;
+	index = <4>;
+	fifo-depth = <0x80>;
+	status = "okay";
+};
+*/

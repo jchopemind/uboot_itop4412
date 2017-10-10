@@ -1,0 +1,81 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARFLAGS	Makefile	/^ARFLAGS		= -ruv$/;"	m
+ASFLAGS	Makefile	/^ASFLAGS		=$/;"	m
+ASM	Makefile	/^ASM		=$/;"	m
+BLOCK_END	sd_fdisk.c	15;"	d	file:
+BLOCK_SIZE	sd_fdisk.c	14;"	d	file:
+CC	Makefile	/^CC		= gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS		= -o$/;"	m
+CHS_MODE	sd_fdisk.c	20;"	d	file:
+C_end	sd_fdisk.c	/^	int		C_end;$/;"	m	struct:__anon1	file:	access:public
+C_end	sd_fdisk.c	/^	int		C_end;$/;"	m	struct:__anon2	file:	access:public
+C_start	sd_fdisk.c	/^	int		C_start;$/;"	m	struct:__anon1	file:	access:public
+C_start	sd_fdisk.c	/^	int		C_start;$/;"	m	struct:__anon2	file:	access:public
+H_end	sd_fdisk.c	/^	int		H_end;$/;"	m	struct:__anon1	file:	access:public
+H_end	sd_fdisk.c	/^	int		H_end;$/;"	m	struct:__anon2	file:	access:public
+H_start	sd_fdisk.c	/^	int		H_start;$/;"	m	struct:__anon1	file:	access:public
+H_start	sd_fdisk.c	/^	int		H_start;$/;"	m	struct:__anon2	file:	access:public
+INCPATH	Makefile	/^INCPATH		=$/;"	m
+LBA_MODE	sd_fdisk.c	21;"	d	file:
+LDFLAGS	Makefile	/^LDFLAGS		= -L$(LIBPATH) $/;"	m
+LIBCC	Makefile	/^LIBCC		= ar$/;"	m
+LIBPATH	Makefile	/^LIBPATH		= $/;"	m
+LIBS	Makefile	/^LIBS =$/;"	m
+LINK	Makefile	/^LINK		=$/;"	m
+OBJPATH	Makefile	/^OBJPATH		= .$/;"	m
+OUTPATH	Makefile	/^OUTPATH		= .$/;"	m
+PartitionInfo	sd_fdisk.c	/^} PartitionInfo;$/;"	t	typeref:struct:__anon2	file:
+RM	Makefile	/^RM		= rm$/;"	m
+SDInfo	sd_fdisk.c	/^} SDInfo;$/;"	t	typeref:struct:__anon1	file:
+SOURCEPATH	Makefile	/^SOURCEPATH	= .$/;"	m
+SOURCES	Makefile	/^SOURCES = $(OBJECTS:.o=.c)$/;"	m
+S_end	sd_fdisk.c	/^	int		S_end;$/;"	m	struct:__anon1	file:	access:public
+S_end	sd_fdisk.c	/^	int		S_end;$/;"	m	struct:__anon2	file:	access:public
+S_start	sd_fdisk.c	/^	int		S_start;$/;"	m	struct:__anon1	file:	access:public
+S_start	sd_fdisk.c	/^	int		S_start;$/;"	m	struct:__anon2	file:	access:public
+_100MB	sd_fdisk.c	17;"	d	file:
+_10MB	sd_fdisk.c	16;"	d	file:
+_8_4GB	sd_fdisk.c	18;"	d	file:
+__anon1::C_end	sd_fdisk.c	/^	int		C_end;$/;"	m	struct:__anon1	file:	access:public
+__anon1::C_start	sd_fdisk.c	/^	int		C_start;$/;"	m	struct:__anon1	file:	access:public
+__anon1::H_end	sd_fdisk.c	/^	int		H_end;$/;"	m	struct:__anon1	file:	access:public
+__anon1::H_start	sd_fdisk.c	/^	int		H_start;$/;"	m	struct:__anon1	file:	access:public
+__anon1::S_end	sd_fdisk.c	/^	int		S_end;$/;"	m	struct:__anon1	file:	access:public
+__anon1::S_start	sd_fdisk.c	/^	int		S_start;$/;"	m	struct:__anon1	file:	access:public
+__anon1::addr_mode	sd_fdisk.c	/^	int		addr_mode;	\/\/ LBA_MODE or CHS_MODE$/;"	m	struct:__anon1	file:	access:public
+__anon1::available_block	sd_fdisk.c	/^	int		available_block;$/;"	m	struct:__anon1	file:	access:public
+__anon1::total_block_count	sd_fdisk.c	/^	int		total_block_count;$/;"	m	struct:__anon1	file:	access:public
+__anon1::unit	sd_fdisk.c	/^	int		unit;$/;"	m	struct:__anon1	file:	access:public
+__anon2::C_end	sd_fdisk.c	/^	int		C_end;$/;"	m	struct:__anon2	file:	access:public
+__anon2::C_start	sd_fdisk.c	/^	int		C_start;$/;"	m	struct:__anon2	file:	access:public
+__anon2::H_end	sd_fdisk.c	/^	int		H_end;$/;"	m	struct:__anon2	file:	access:public
+__anon2::H_start	sd_fdisk.c	/^	int		H_start;$/;"	m	struct:__anon2	file:	access:public
+__anon2::S_end	sd_fdisk.c	/^	int		S_end;$/;"	m	struct:__anon2	file:	access:public
+__anon2::S_start	sd_fdisk.c	/^	int		S_start;$/;"	m	struct:__anon2	file:	access:public
+__anon2::block_count	sd_fdisk.c	/^	int		block_count;$/;"	m	struct:__anon2	file:	access:public
+__anon2::block_end	sd_fdisk.c	/^	int		block_end;$/;"	m	struct:__anon2	file:	access:public
+__anon2::block_start	sd_fdisk.c	/^	int		block_start;$/;"	m	struct:__anon2	file:	access:public
+__anon2::bootable	sd_fdisk.c	/^	unsigned char bootable;$/;"	m	struct:__anon2	file:	access:public
+__anon2::partitionId	sd_fdisk.c	/^	unsigned char partitionId;$/;"	m	struct:__anon2	file:	access:public
+addr_mode	sd_fdisk.c	/^	int		addr_mode;	\/\/ LBA_MODE or CHS_MODE$/;"	m	struct:__anon1	file:	access:public
+available_block	sd_fdisk.c	/^	int		available_block;$/;"	m	struct:__anon1	file:	access:public
+block_count	sd_fdisk.c	/^	int		block_count;$/;"	m	struct:__anon2	file:	access:public
+block_end	sd_fdisk.c	/^	int		block_end;$/;"	m	struct:__anon2	file:	access:public
+block_start	sd_fdisk.c	/^	int		block_start;$/;"	m	struct:__anon2	file:	access:public
+bootable	sd_fdisk.c	/^	unsigned char bootable;$/;"	m	struct:__anon2	file:	access:public
+calc_unit	sd_fdisk.c	/^int calc_unit(int length, SDInfo sdInfo)$/;"	f	signature:(int length, SDInfo sdInfo)
+encode_chs	sd_fdisk.c	/^void encode_chs(int C, int H, int S, unsigned char *result)$/;"	f	signature:(int C, int H, int S, unsigned char *result)
+encode_partitionInfo	sd_fdisk.c	/^void encode_partitionInfo(PartitionInfo partInfo, unsigned char *result)$/;"	f	signature:(PartitionInfo partInfo, unsigned char *result)
+get_SDInfo	sd_fdisk.c	/^void get_SDInfo(int block_count, SDInfo *sdInfo)$/;"	f	signature:(int block_count, SDInfo *sdInfo)
+get_sd_block_count	sd_fdisk.c	/^int get_sd_block_count(char *devicefile)$/;"	f	signature:(char *devicefile)
+main	V310-EVT1-mkbl2.c	/^int main (int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	sd_fdisk.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+make_partitionInfo	sd_fdisk.c	/^void make_partitionInfo(int LBA_start, int count, SDInfo sdInfo, PartitionInfo *partInfo)$/;"	f	signature:(int LBA_start, int count, SDInfo sdInfo, PartitionInfo *partInfo)
+partitionId	sd_fdisk.c	/^	unsigned char partitionId;$/;"	m	struct:__anon2	file:	access:public
+total_block_count	sd_fdisk.c	/^	int		total_block_count;$/;"	m	struct:__anon1	file:	access:public
+unit	sd_fdisk.c	/^	int		unit;$/;"	m	struct:__anon1	file:	access:public
